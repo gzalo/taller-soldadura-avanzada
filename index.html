@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Taller de soldadura avanzada</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/blood.min.css" id="theme">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/monokai.min.css">
+		<style>
+			.reveal h1 { font-size: 2.5em; }
+			.reveal h2 { font-size: 1.8em; }
+			.reveal h3 { font-size: 1.3em; }
+			.reveal h4 { font-size: 0.8em; }
+			.reveal p { font-size: 0.8em; }
+			.reveal a { color:rgb(194, 39, 39); }
+			.reveal li { font-size: 0.8em; }
+			.reveal span { font-size: 1em; }
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Taller de soldadura avanzada</h1>
+					<span>Gonzalo Avila · <tt>gzalo.com</tt></span>
+				</section>
+
+				<section>
+					<section>
+					<h2>Precauciones</h2>
+					<p>Soldar no es tan peligroso comparado con otros hobbies, pero...</p>
+					</section>
+
+					<section>
+					<p>El estaño que usamos tiene <strong>plomo</strong> &rarr; Lavarse las manos después de soldar</p>
+					<img src="images/woz.png" width="80%" class="fragment">
+					</section>
+					<section>
+						<h3>Vapores</h3>
+						<p class="fragment">El plomo es pesado, no hay problema con sus vapores</p>
+						<p class="fragment">
+							<strong>Salvo que soldemos con soplete</strong>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vapores</h3>
+						<p>El <em>flux/resina</em> genera la mayoría del humo que vemos.</p>
+						<p>Es tóxica y puede irritar el sistema respiratorio, asma, dolores de cabeza, entre otas cosas.</p>
+						<ul>
+							<li class="fragment"><strong>Trabajar en un area ventilada (o extractores + filtros)</strong></li>
+							<li class="fragment"><strong>No ubicarse arriba de la placa, sí al costado</strong></li>
+							<li class="fragment"><strong>Usar estaño sin plomo si es posible</strong></li>
+							<li class="fragment"><strong>Si usamos solventes dejarlos bien cerrados</strong></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Temperatura</h3>
+						El soldador está muy caliente<br>
+						<img src="images/fail.png" width="35%" class="fragment"><img src="images/fail2.png" width="35%" class="fragment"><br>
+						<p class="fragment">Si nos quemamos, agua fria por 15 minutos</p>
+					</section>
+
+					<section>
+						<h3>Temperatura</h3>
+						<img src="images/hot.jpg" width="45%"><br>
+						<ul>
+							<li class="fragment">Usar pinzas/morsas para agarrar placas y componentes</li>
+							<li class="fragment">Siempre dejar el soldador en su soporte</li>
+							<li class="fragment">Revisar cable, apagarlo después del uso</li>
+							<li class="fragment">Tener a mano un matafuegos</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Riesgos varios</h3>
+						<p class="fragment">El flux puede <i>escupir</i> &rarr; alejar la cara, usar anteojos</p>
+						<p class="fragment">Cuidado al soldar cables con <em>tensión</em> (tipo resorte)</p>
+						<p class="fragment">Cuidado al soldar placas energizadas (está a tierra)</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Tips de limpieza</h2>
+						<p class="fragment">Punta sucia o sin estaño &rarr; transfiere mal el calor</p>
+						<p class="fragment"><strong>No</strong> usar abrasivos salvo casos extremos</p>
+						<p class="fragment">Usar esponja vegetal, limpiador de punta o viruta de bronce</p>
+						<p class="fragment">La esponja no debe estar ni muy humeda ni muy seca</p>
+						<p class="fragment">Guardarlo limpio, y siempre agregar estaño antes de usar</p>
+					</section>
+					
+					<section>
+						<h2>Tips de limpieza</h2>
+						<p class="fragment">Usar otro soldador para derretir plásticos, termocontraíbles, calentar insertos roscados</p>
+						<p class="fragment">No hacer fuerza con la punta, ni usar más calor del necesario</p>
+						<img src="images/cleaning.png" width="85%" class="fragment"><br>
+						</section>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Encapsulados típicos</h2>
+					</section>
+					<section>
+						<h3>Pasivos</h3>
+						<p>Resistencias, capacitores, inductores<br><strong>1206, 0805, 0603, 0402</strong></p>
+						<img src="images/smd-rescap.png" width="58%"><br>
+					</section>
+					<section>
+						<h3>Diodos</h2>
+						<ul>
+							<li class="fragment">MELF / LL-41<br>
+							<img src="images/smd-melf.png" width="75%">
+							</li>
+							<li class="fragment">SOD (323/123)<br>
+							<img src="images/smd-sod.png" width="45%" >
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Transistores y reguladores</h2>
+						<ul>
+							<li class="fragment">SOT<br>
+							<img src="images/smd-sot.png" width="75%">
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Capacitores polarizados</h2>
+						<ul>
+							<li class="fragment">Tantalio<br>
+							<img src="images/smd-tantalum.png" width="45%">
+							</li>
+							<li class="fragment">Aluminio<br>
+							<img src="images/smd-alum.png" width="50%">
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Circuitos integrados</h2>
+						<ul>
+							<img src="images/smd-ics.png" width="100%">
+							<img src="images/smd-ics-complex.png" width="80%" class="fragment">
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Técnicas para soldar</h2>
+						<p class="fragment">Soldador tipo lápiz (30 a 40 W es suficiente)</p>
+						<p class="fragment">Temperatura correcta si podemos regularla (380 ºC)</p>
+						<p class="fragment">Estaño fino (0.7 mm o menos), con plomo</p>
+						<p class="fragment">Punta limpia, sin escoria/resina quemada</p>
+						<p class="fragment">Agregar más resina si es necesario</p>
+					</section>
+
+					<section>
+						<h3>Forma profesional: con horno o plancha caliente</h3>
+						<p class="fragment">Se usa un stencil para ubicar pasta de soldar (estaño+flux)<br>
+						<img src="images/paste1.jpeg" width="40%"><img src="images/paste2.jpeg" width="40%"></p>
+						<p class="fragment">Se ubican los componentes (pick and place)</p>
+						<p class="fragment">Se calienta la placa siguiendo una curva en particular</p>
+					</section>
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LCmia0Wsmqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/rgcupYOnvBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+
+					<section>
+						<h3><em>Drag soldering</em></h2>
+						<p class="fragment">Punta limpia, sin escoria/flux quemado</p>
+						<p class="fragment">Alinear encapsulado, soldar un pin, luego el opuesto</p>
+						<p class="fragment">Agregar estaño formando una gota (<em>siempre</em> se puede sacar)</p>
+						<p class="fragment">Arrastrar la gota perpendicularmente a los pines</p>
+						<p class="fragment">Agregar más flux si es necesario</p>
+					</section>
+
+					<section>
+						<h3>Inspección</h2>
+						<p class="fragment">Usar una lupa o microscopio para revisar:</p>
+						<ul>
+						<li class="fragment">Que el encapsulado esté bien alineado</li>
+						<li class="fragment">Que no existan cortocircuitos o bolas de estaño</li>
+						<li class="fragment">Que los pines estén bien soldados (moverlos con un alfiler)</li>
+						</ul>
+						<p class="fragment">Algunos encapsulados requieren rayos X para validarlos</p>
+					</section>
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/wUyetZ5RtPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/7dI0NZADiDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Técnicas para desoldar (SMD)</h2>
+						<ul>
+							<li class="fragment">Chupaestaño NO, malla de desoldar SÍ:</li>
+							<ul>
+								<li class="fragment">Usarla para pequeños cambios, no para desoldar componentes completos (para eso pistola de calor)</li>
+								<li class="fragment">Hay distintas calidades de malla, siempre agregar flux adicional para que desuelde por capilaridad, no empezar por el borde</li>
+							</ul>
+							<li class="fragment">Para desoldar encapsulados pequeños sin estación, agregar mucho estaño a todos los pines y calentar todo junto</li>
+							<li class="fragment">Hay puntas especiales (más grandes o con formas) para derretir estaño de encapsulados particulares</li>
+							<li class="fragment">Si se va a cambiar el chip, verificar que queden los pads planos</li>
+						</ul>
+					</section>
+
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/PhW14LUH5K0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+
+					<section>
+						<h2>Técnicas para desoldar (THT)</h2>
+						<ul>
+							<li class="fragment">Si se consigue, usar estaño con baja temperatura de fusión</li>
+							<li class="fragment">Agregar alambre de cobre tocando pines para mantener todo caliente</li>
+							<li class="fragment">Para evitar levantar pistas, solo hacer fuerza cuando al dar pequeños golpes se ve que se mueve todo</li>
+							<li class="fragment">Si el estaño no se derrite, agregar estaño nuevo</li>
+							<li class="fragment">Chupaestaño con tubo de silicona (o integrado con soldador)</li>
+						</ul>
+					</section>
+
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/qObbANkrmUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+
+					<section>
+						<h2>Técnicas para desoldar (General)</h2>
+						<ul>
+							<li class="fragment">No forzar las cosas, pueden tardar varios minutos dependiendo de la temperatura ambiente y el tamaño del encapsulado</li>
+							<li class="fragment">Si no importa el chip actual &rarr; cortar con <em>cutter</em> los pines cerca del encapsulado, luego sacar pin a pin</li>
+							<li class="fragment">Se puede usar cinta Kapton para reducir el impacto en otros componentes</li>
+							<li class="fragment">Agregar calentador por debajo (a ~100ºC) para precalentar</li>
+						</ul>
+					</section>
+
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ljRJiN6nHek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3>¡A practicar!</h3>
+						<img src="images/smd.png" width="30%"><br>
+						<p><strong>soldadura.gzalo.com</strong></p>
+					</section>
+					<section>
+						<h2>Fuentes</h2>
+						<ul>
+							<li><a href="https://www.youtube.com/watch?v=pJif4i9NRdI">Woz con estaño</a></li>
+							<li><a href="https://www.youtube.com/watch?v=JADI1N-K9Yc">How to clean Soldering Tip</a></li>
+							<li><a href="https://www.pcbway.com/blog/PCB_Design_Tutorial/A_very_easy_way_to_accurately_align_the_stencil_with_the_PCB_1.html">Ejemplo de pasta de soldar y stencil</a></li>
+							<li><a href="https://makezine.com/article/maker-news/beautiful-woman-soldering-stock-photo-wrong/">Gente agarrando el soldador de la punta: Shutterstock</a></li>
+							<li><a href="https://mobile.twitter.com/shapoco/status/1623691828062191618">Componentes SMD volando</a></li>
+							<li><a href="https://mobile.twitter.com/MakeAugusta/status/1638965195320991744">Soldador al rojo vivo</a></li>
+							<li><a href="https://github.com/AchimPieters/SMD-Reference-Sheets">SMD reference sheets</a></li>
+						</ul>
+						<p>Presentación bajo Creative Commons Attribution-NonCommercial 4.0 International License (excepto imágenes y videos)</p>
+					</section>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/notes/notes.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/highlight/highlight.min.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				navigationMode: 'linear'
+			});
+		</script>
+	</body>
+</html>

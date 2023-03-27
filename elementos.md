@@ -1,0 +1,23 @@
+# Elementos para el taller de soldadura avanzada
+- [ ] Alcohol en dispenser	
+- [ ] Estación soldado	
+- [ ] Puntas y picos varios	
+- [ ] Morsa mini para placas	
+- [ ] Cables esmaltados (2 tipos)	
+- [ ] Malla desoldar (2)	
+- [ ] Estaño	
+- [ ] Esponjas (5)	
+- [ ] pasta uv y lampara	
+- [ ] flux	
+- [ ] hisopos	
+- [ ] pinzas chicas	
+- [ ] morsa manos	
+- [ ] pin morsa	
+- [ ] tester	
+- [ ] placas varias	
+- [ ] placas adaptadoras
+- [ ] componentes	
+- [ ] lupas varias	
+- [ ] reglas	
+- [ ] precalentador	
+- [ ] microscopio	
