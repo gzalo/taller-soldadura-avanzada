@@ -8,7 +8,7 @@
 - [ ] Estaño	
 - [ ] Esponjas (5)	
 - [ ] pasta uv y lampara	
-- [ ] flux	
+- [ ] flux/resina (dos tipos)
 - [ ] hisopos	
 - [ ] pinzas chicas	
 - [ ] morsa manos	
