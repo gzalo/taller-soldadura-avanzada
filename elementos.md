@@ -2,22 +2,23 @@
 - [ ] Alcohol en dispenser	
 - [ ] Estación soldado	
 - [ ] Puntas y picos varios	
-- [ ] Morsa mini para placas	
 - [ ] Cables esmaltados (2 tipos)	
 - [ ] Malla desoldar (2)	
 - [ ] Estaño	
-- [ ] Esponjas (5)	
-- [ ] pasta uv y lampara	
-- [ ] flux/resina (dos tipos)
-- [ ] hisopos	
-- [ ] pinzas chicas	
-- [ ] morsa manos	
-- [ ] pin morsa	
-- [ ] tester	
-- [ ] placas varias	
-- [ ] placas adaptadoras
-- [ ] componentes	
-- [ ] lupas varias	
-- [ ] reglas	
-- [ ] precalentador	
-- [ ] microscopio	
+- [ ] Esponjas (12)	
+- [ ] Pasta uv y lámpara	
+- [ ] Flux/resina (dos tipos)
+- [ ] Hisopos	
+- [ ] Pinzas chicas	
+- [ ] Morsa puntas coco 
+- [ ] Morsa punta para smd
+- [ ] Morsa metálica mini
+- [ ] Tester	
+- [ ] Placas varias	
+- [ ] Placas adaptadoras
+- [ ] Componentes varios
+- [ ] Lupas varias	
+- [ ] Reglas	
+- [ ] Precalentador	
+- [ ] Microscopio USB
+- [ ] Soldador con punta pequeña
